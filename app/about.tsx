@@ -39,7 +39,7 @@ export function About() {
           My Skills
         </h1>
       </div>
-      <div className="container mx-auto p-7 lg:w-[60%]">
+      <div className="container mx-auto p-7 w-[80%] md:w-[70%] lg:w-[60%]">
         <div className="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3">
          
           <div className=" container flex justify-center p-10  text-6xl bg-containerBg shadow-md rounded-xl">
