@@ -14,7 +14,7 @@ const roboto = Roboto({
 export default function Experience() {
   return (
     <div className="h-screen bg-containerBg">
-      <div className="px-20 py-10">
+      <div className="px-12 md:px-15 lg:px-20 py-10">
         <h1 className={`${lora.className} text-3xl text-white font-semibold `}>
           Experience
         </h1>

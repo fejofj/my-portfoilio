@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export function About() {
   return (
-    <div className="bg-darkBg p-20">
+    <div className="bg-darkBg p-12  md:p-15` lg:p-20">
       <h1 className={`${lora.className} text-3xl text-white font-semibold`}>
         About
       </h1>
