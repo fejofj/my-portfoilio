@@ -1,9 +1,10 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Febin Joseph - Protfolio',
-  description: 'Febin Joseph - Hybrid & Native mobile application developer based in Kerala, India',
-}
+  title: "Febin Joseph - Portfolio",
+  description:
+    "Febin Joseph - Hybrid & Native mobile application developer based in Kerala, India",
+};
 
 export default function RootLayout({
   children,
