@@ -73,6 +73,7 @@ export default function Hero() {
               }
             />
             <Image
+              priority
               className="mt-5"
               src="/insta_icon.png"
               alt="linked icon"
