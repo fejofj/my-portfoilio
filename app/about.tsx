@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export function About() {
   return (
-    <div className="bg-darkBg p-12  md:p-15` lg:p-20">
+    <div className="bg-darkBg p-12  md:p-15 lg:p-20">
       <h1 className={`${lora.className} text-3xl text-white font-semibold`}>
         About
       </h1>
@@ -21,8 +21,8 @@ export function About() {
         <div className="text-yellow">
           <div className="  w-12 h-[2px]  rounded  bg-yellow mr-3 mt-3 pr-2 "></div>
         </div>
-        <div
-          className={`${roboto.className} text-xs md:text-base lg:text-base text-white ml-0`}
+        <p
+          className={`${roboto.className} text-sm md:text-base lg:text-base text-white ml-0`}
         >
           Experienced app developer with 2 years of experience in mobile
           application development for{" "}
@@ -34,7 +34,7 @@ export function About() {
           about keeping up with the latest trends and technologies in the mobile
           app development space. Strong communicator with experience
           collaborating with cross-functional teams.
-        </div>
+        </p>
       </div>
       <div className="flex pt-[3rem] items-center justify-center">
         <h1 className={`${lora.className} text-3xl text-white font-semibold`}>

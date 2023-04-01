@@ -13,10 +13,10 @@ const roboto = Roboto({
 export default function Hero() {
   return (
     <div
-      className={`${roboto.className} bg-bgColor  md:flex lg:flex items-center h-screen shadow-lg`}
+      className={`${roboto.className} bg-bgColor  md:flex lg:flex items-center h-max shadow-lg`}
     >
       <div className="grid items-center justify-center  grid-cols-1 md:grid-cols-2 sm:grid-cols-2 ">
-        <div className="flex items-center justify-center">
+        <div className="pt-8 flex items-center justify-center">
           <div className="space-y-1">
             <div className="flex flex-row space-x-2 lg:space-x-5 md:space-x-5">
               <h1 className="text-xl md:text2-xl lg:text-2xl font-light text-white self-end tracking-wider">
@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="bottom-1 right-[4rem]  relative ">
+        <div className="bottom-1 left-2 right-[4rem]  relative ">
           <Image
             className="bottom-0"
             src="/febin_grey_web.png"
@@ -57,8 +57,8 @@ export default function Hero() {
             width={700}
             height={700}
           />
-          <div className="absolute bottom-[20%] right-[6rem]">
-            <div className="  w-1 h-40  rounded  bg-yellow  "></div>
+          <div className="absolute bottom-[15%] right-[4rem]">
+            <div className="  w-[0.20rem] h-40  rounded  bg-yellow  "></div>
             <Image
               className="mt-5"
               src="/linkedin-512.png"
