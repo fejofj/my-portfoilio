@@ -13,30 +13,32 @@ const roboto = Roboto({
 export default function Hero() {
   return (
     <div
-      className={`${roboto.className} bg-bgColor flex items-center h-screen shadow-lg`}
+      className={`${roboto.className} bg-bgColor  md:flex lg:flex items-center h-screen shadow-lg`}
     >
-      <div className="grid items-center justify-center p-0 grid-cols-1 md:grid-cols-2 sm:grid-cols-2 ">
+      <div className="grid items-center justify-center  grid-cols-1 md:grid-cols-2 sm:grid-cols-2 ">
         <div className="flex items-center justify-center">
           <div className="space-y-1">
-            <div className="flex flex-row space-x-5">
-              <h1 className="text-2xl font-light text-white self-end tracking-wider">
+            <div className="flex flex-row space-x-2 lg:space-x-5 md:space-x-5">
+              <h1 className="text-xl md:text2-xl lg:text-2xl font-light text-white self-end tracking-wider">
                 I'M
               </h1>
 
-              <h1 className={`${lora.className} text-5xl text-yellow`}>
+              <h1
+                className={`${lora.className} text-4xl md:text5-xl lg:text-5xl text-yellow`}
+              >
                 Febin Joseph
               </h1>
             </div>
 
-            <h1 className="text-base text-white">
+            <h1 className="text-sm md:text-base lg:text-base text-white">
               Hybrid & Native mobile application developer
             </h1>
             <div className="pt-4">
               <button
                 onClick={() =>
                   window.open(
-                    'https://drive.google.com/file/d/1DUbDN7kzK3Y-5WZICDBi_DDW7Rdke1fX/view?usp=share_link',
-                    '_blank'
+                    "https://drive.google.com/file/d/1DUbDN7kzK3Y-5WZICDBi_DDW7Rdke1fX/view?usp=share_link",
+                    "_blank"
                   )
                 }
                 className="inline-block px-6 pt-1 pb-1  text-yellow  border-2 rounded border-yellow"
@@ -47,7 +49,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="bottom-0 right-[4rem]  relative ">
+        <div className="bottom-1 right-[4rem]  relative ">
           <Image
             className="bottom-0"
             src="/febin_grey_web.png"
@@ -65,8 +67,8 @@ export default function Hero() {
               height={30}
               onClick={() =>
                 window.open(
-                  'https://www.linkedin.com/in/febin-joseph-b6895321b',
-                  '_blank'
+                  "https://www.linkedin.com/in/febin-joseph-b6895321b",
+                  "_blank"
                 )
               }
             />

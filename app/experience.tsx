@@ -13,14 +13,14 @@ const roboto = Roboto({
 
 export default function Experience() {
   return (
-    <div className="h-screen bg-containerBg">
+    <div className="h-max bg-containerBg">
       <div className="px-12 md:px-15 lg:px-20 py-10">
         <h1 className={`${lora.className} text-3xl text-white font-semibold `}>
           Experience
         </h1>
       </div>
 
-      <div className="justify-center p-8 xl:px-[10rem] md:px-[10rem] lg:px-[20rem]">
+      <div className="justify-center pt-1 px-8 pb-10 xl:px-[10rem] md:px-[10rem] lg:px-[20rem]">
         <div className="flex  space-x-10 items-start justify-start">
           <div className="flex space-x-8 items-start justify-center ">
             <Arrow string="Present" />
@@ -30,11 +30,13 @@ export default function Experience() {
             </div>
           </div>
           <div className="justify-start items-start">
-            <h1 className="text-3xl text-white">Android developer</h1>
-            <h1 className="text-base pt-1 text-white">
+            <h1 className="text-xl md:text-3xl lg:text-3xl text-white">
+              Android developer
+            </h1>
+            <h1 className="text-sm md:text-base lg:text-base pt-1 text-white">
               Innovation Incubator Advisory, Trivandrum, Kerala
             </h1>
-            <h1 className="text-base pt-5 text-lightText">
+            <h1 className="text-xs md:text-base lg:text-base pt-5 text-lightText">
               Develop, design, and maintain mobile applications for iOS and
               Android platforms, utilising programming languages such as Dart,
               Flutter SDK, Kotlin. Collaborate with clients to understand their
@@ -53,14 +55,18 @@ export default function Experience() {
             </div>
           </div>
           <div className="justify-start items-start">
-            <h1 className="text-3xl text-white">Android developer Intern </h1>
+            <h1 className=" text-xl md:text-3xl lg:text-3xl text-white">
+              Android developer Intern{" "}
+            </h1>
             <span className="text-base text-yellow">(June - August)</span>
-            <h1 className="text-base pt-1 text-white">
+            <h1 className="text-sm md:text-base lg:text-base pt-1 text-white">
               Innovation Incubator Advisory, Trivandrum, Kerala
             </h1>
-            <h1 className="text-base pt-5 text-lightText">
-              Assisted in the development and design of mobile applications for Android platforms, using programming languages such as Kotlin.
-Assisted with research into new technologies and programming trends.
+            <h1 className="text-xs md:text-base lg:text-base pt-5 text-lightText">
+              Assisted in the development and design of mobile applications for
+              Android platforms, using programming languages such as Kotlin.
+              Assisted with research into new technologies and programming
+              trends.
             </h1>
           </div>
         </div>
