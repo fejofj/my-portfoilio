@@ -67,7 +67,7 @@ export default function Hero() {
               height={30}
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/febin-joseph-b6895321b",
+                  "https://www.linkedin.com/in/febin-k-joseph",
                   "_blank"
                 )
               }
