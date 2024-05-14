@@ -13,7 +13,7 @@ const roboto = Roboto({
 export default function Hero() {
   return (
     <div
-      className={`${roboto.className} bg-bgColor  md:flex lg:flex items-center h-max shadow-lg`}
+      className={`${roboto.className} bg-bgColor  md:flex lg:flex items-center h-lvh shadow-lg`}
     >
       <div className="grid items-center justify-center  grid-cols-1 md:grid-cols-2 sm:grid-cols-2 ">
         <div className="pt-8 flex items-center justify-center">
