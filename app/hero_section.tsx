@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="bottom-1 left-2 right-[4rem]  relative ">
+        <div className="bottom-0 left-2 right-[4rem]  relative ">
           <Image
             className="bottom-0"
             src="/febin_grey_web.png"
