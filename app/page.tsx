@@ -8,8 +8,11 @@ export default function Page() {
 
   return (
     <div>
+      <div className="dynamic-height">
       <Navbar />
           <Hero />
+      </div>
+     
           <About />
           <Experience />
           <Footer/>
