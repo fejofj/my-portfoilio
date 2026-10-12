@@ -44,7 +44,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/febin-k-joseph"
+            href="https://github.com/fejofj"
             target="_blank"
             rel="noreferrer"
             className={`${roboto.className} text-sm text-white hover:text-yellow`}

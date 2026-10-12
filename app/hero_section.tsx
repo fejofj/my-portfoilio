@@ -82,7 +82,7 @@ export default function Hero() {
             </a>
             <a
               className="mt-3 sm:mt-5 text-white hover:text-yellow bg-bgColor/80 rounded p-1"
-              href="https://github.com/febin-k-joseph"
+              href="https://github.com/fejofj"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
