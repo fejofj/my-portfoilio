@@ -1,14 +1,5 @@
-import { Lora, Roboto } from "@next/font/google";
 import Arrow from "./arrow";
-
-const lora = Lora({
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+import { lora, roboto } from "./fonts";
 
 const highlights = [
   "Lead backend development for a telecom service enablement platform using Node.js, Moleculer.js, and PostgreSQL.",

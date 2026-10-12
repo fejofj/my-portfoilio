@@ -1,13 +1,4 @@
-import { Lora, Roboto } from "@next/font/google";
-
-const lora = Lora({
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+import { lora, roboto } from "./fonts";
 
 const projects = [
   {

@@ -1,15 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Lora, Roboto } from "@next/font/google";
-
-const lora = Lora({
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { lora, roboto } from "./fonts";
 
 export default function Hero() {
   return (

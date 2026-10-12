@@ -1,12 +1,7 @@
 "use client";
 
-import { Roboto } from "@next/font/google";
 import { useState } from "react";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { roboto } from "./fonts";
 
 const links = [
   { href: "#about", label: "About" },

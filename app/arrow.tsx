@@ -1,8 +1,4 @@
-import { Lora } from "@next/font/google";
-
-const lora = Lora({
-  subsets: ["latin"],
-});
+import { lora } from "./fonts";
 
 export default function Arrow({ string }: { string: string }) {
   return (
