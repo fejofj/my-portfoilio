@@ -1,118 +1,100 @@
-import Image from "next/image";
-import { Lora, Roboto, Roboto_Condensed } from "@next/font/google";
+import { Lora, Roboto } from "@next/font/google";
 
 const lora = Lora({
   subsets: ["latin"],
 });
 
-
 const roboto = Roboto({
-    weight:['400'],
+  weight: ["400"],
   subsets: ["latin"],
 });
 
+const skillGroups = [
+  {
+    title: "Backend",
+    skills: ["Node.js", "Moleculer.js", "Express.js", "REST APIs", "SOAP APIs"],
+  },
+  {
+    title: "Architecture",
+    skills: [
+      "Microservices",
+      "Distributed Systems",
+      "Service Orchestration",
+      "Async Processing",
+    ],
+  },
+  {
+    title: "Data & Messaging",
+    skills: ["PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "BullMQ"],
+  },
+  {
+    title: "Cloud & Quality",
+    skills: ["AWS", "Docker", "CI/CD", "Jest", "Git"],
+  },
+  {
+    title: "Telecom",
+    skills: [
+      "TM Forum",
+      "Service Enablement",
+      "Device Integration",
+      "Service Lifecycle",
+    ],
+  },
+];
+
 export function About() {
   return (
-    <div className="bg-darkBg p-12  md:p-15 lg:p-20">
-      <h1 className={`${lora.className} text-3xl text-white font-semibold`}>
+    <section id="about" className="scroll-mt-24 bg-darkBg px-4 sm:px-8 lg:px-20 py-12 sm:py-16 lg:py-20">
+      <h1 className={`${lora.className} text-2xl sm:text-3xl text-white font-semibold`}>
         About
       </h1>
-      <div className="flex pt-3">
-        <div className="text-yellow">
-          <div className="  w-12 h-[2px]  rounded  bg-yellow mr-3 mt-3 pr-2 "></div>
+      <div className="flex pt-3 gap-3">
+        <div className="text-yellow shrink-0">
+          <div className="w-8 sm:w-12 h-[2px] rounded bg-yellow mt-3"></div>
         </div>
         <p
-          className={`${roboto.className} text-sm md:text-base lg:text-base text-white ml-0`}
+          className={`${roboto.className} text-sm sm:text-base text-white leading-relaxed`}
         >
-          Experienced app developer with 2 years of experience in mobile
-          application development for{" "}
-          <span className="text-yellow">iOS and Android platforms</span>.
-          Proficient in programming languages such as{" "}
-          <span className="text-yellow">Kotlin, Java, Dart</span>. Skilled in
-          developing intuitive and user-friendly interfaces, implementing
-          backend functionality, and integrating third-party APIs. Passionate
-          about keeping up with the latest trends and technologies in the mobile
-          app development space. Strong communicator with experience
-          collaborating with cross-functional teams.
+          Backend Senior Software Engineer with{" "}
+          <span className="text-yellow">5 years of experience</span> building{" "}
+          <span className="text-yellow">Node.js</span> services for telecom
+          systems. I develop REST and SOAP integrations, microservices,
+          asynchronous workflows, and service orchestration using Node.js,
+          Moleculer.js, PostgreSQL, Kafka, Redis, BullMQ, Docker, and AWS. I
+          own work from technical design and API development through testing,
+          CI/CD, deployment, and production support, collaborating with
+          architects, customers, and network-device vendors.
         </p>
       </div>
-      <div className="flex pt-[3rem] items-center justify-center">
-        <h1 className={`${lora.className} text-3xl text-white font-semibold`}>
+
+      <div className="flex pt-10 sm:pt-12 items-center justify-center">
+        <h2 className={`${lora.className} text-2xl sm:text-3xl text-white font-semibold`}>
           My Skills
-        </h1>
+        </h2>
       </div>
-      <div className="container mx-auto pt-7 w-[100%] md:w-[70%] lg:w-[60%]">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div className=" container flex justify-center p-10  text-6xl bg-containerBg shadow-md rounded-xl">
-            <div className="flex flex-col items-center">
-              <Image
-                width={50}
-                height={50}
-                src="/flutter.png"
-                alt="flutter icon"
-              />
-              <h1 className="pt-2 text-white text-xs md:text-base lg:text-base">
-                Flutter
-              </h1>
+
+      <div className="mx-auto pt-7 w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        {skillGroups.map((group) => (
+          <div
+            key={group.title}
+            className="bg-containerBg shadow-md rounded-xl p-5 sm:p-6"
+          >
+            <h3 className={`${lora.className} text-yellow text-lg mb-3`}>
+              {group.title}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {group.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className={`${roboto.className} text-xs sm:text-sm text-white border border-white/20 rounded-full px-3 py-1`}
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
-          <div className="flex justify-center p-10 text-6xl bg-containerBg shadow-md rounded-xl">
-            <div className="flex flex-col items-center">
-              <Image
-                width={50}
-                height={50}
-                src="/kotlin.png"
-                alt="kotlin icon"
-              />
-              <h1 className="pt-2 text-white text-xs md:text-base lg:text-base">
-                Kotlin
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center p-10 text-6xl bg-containerBg shadow-md rounded-xl">
-            <div className="flex flex-col items-center">
-              <Image
-                width={50}
-                height={50}
-                src="/nextjs.png"
-                alt="flutter icon"
-              />
-              <h1 className="pt-2 text-white text-xs md:text-base lg:text-base">
-                Next js
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center p-10 text-6xl bg-containerBg shadow-md rounded-xl">
-            <div className="flex flex-col items-center">
-              <Image width={50} height={50} src="/html.png" alt="html icon" />
-              <h1 className="pt-2 text-white text-xs md:text-base lg:text-base">
-                Html
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center p-10 text-6xl bg-containerBg shadow-md rounded-xl">
-            <div className="flex flex-col items-center">
-              <Image
-                width={50}
-                height={50}
-                src="/tailwind.png"
-                alt="tailwind icon"
-              />
-              <h1 className="pt-2 text-white text-xs md:text-base justify-center lg:text-base">
-                Tailwind CSS
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center p-10 text-6xl bg-containerBg shadow-md rounded-xl">
-            <div className="flex flex-col justify-center items-center">
-              <Image width={50} height={50} src="/git.png" alt="git icon" />
-              <h1 className="pt-2 text-white text-xs md:text-base lg:text-base">
-                Git
-              </h1>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }
